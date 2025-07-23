@@ -7,11 +7,65 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <article>
+    <header>
+        <h1>WGU 367 Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="career-goals.html">Career Goals</a></li>
+                <li><a href="cover-letter.html">Cover Letter</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <img src="image3.jpeg" alt="Career Goals Image" width="300" height="200">
+            <p>What I'm listening to:</p>
+            <audio controls src="barbie_beauty_boutique_soundtrack_-_track_4.mp3"></audio>
+        </section>
+        <article>
             <video width="320" height="240" controls>
                 <source src="videoreq.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
-    </article>
+        </article>
+        <section>
+            <form action="https://wp.zybooks.com/form-viewer.php" method="post">
+                <label for="firstname">First name:</label>
+                <input type="text" id="fname" name="firstname" required>
+                <br>
+                <label for="lastname">Last name:</label>
+                <input type="lastname" id="lname" name="lname" required>
+                <br>
+                <label for="companyname">Company Name:</label>
+                <input type="companyname" id="cname" name="companyname">
+                <br>
+                <label for="phonenumber">Phone number:</label>
+                <input type="phonenumber" id="pnumber" name="pnumber">
+                <br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <br>
+                <label for="contacttime">Best time to contact:</label>
+                <input type="radio" id = "a.m." name="contacttime" value="a.m.">
+                <label for="a.m.">a.m.</label>
+                <input type="radio" id = "p.m." name="contacttime" value="p.m.">
+                <label for="p.m.">p.m.</label>
+                <input type="radio" id = "anytime" name="contacttime" value="anytime">
+                <label for="anytime">anytime</label>
+                <br>
+                <label for="wayof">Preferred contact method:</label>
+                <select name="contactway" id="wayof">
+                <option value="email">E-mail</option>
+                <option value="phone">Phone</option>
+                <option value="text">Text</option>
+                </select>
+                <br>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
 </body>
+    <footer>
+        <p>&copy; 2023 John Doe</p>
+    </footer>
 </html>

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <header>
         <h1>WGU 367 Portfolio</h1>
         <nav>
@@ -21,7 +22,7 @@
             <h1>Welcome to my resume!</h1>
         </article>
         <div>
-            <span>Current date: </span>
+            <span id = "currentDate"></span>
         </div>
         <section id ="resume">
             <section>
@@ -30,27 +31,54 @@
                 <p>Email: </p>
                 <p><a href="https://www.google.com/">Link to my website</a></p>
             </section>
-            <br></br>
+            <br>
             <section>
                 <h2>Education</h2>
                 <p>Bachelor of Science in Computer Science</p>
-                <p>University of Example, 2020</p>
+                <p><em>University of Example, 2020</em></p>
             </section>
-            <br></br>
+            <br>
             <section>
                 <h2>Work Experience</h2>
                 <ul>
                     <li>something something at something
-                        <span>2001</span>
+                        <span><em>2001</em></span>
                     </li>
-                    <li>something something at something else
-                        <span>2002</span>
+                    <li>something something at <strong>something</strong> else
+                        <span><em>2002</em></span>
                     </li>
                 </ul>
             </section>
-            <hr></hr>
+            <hr>
             <section>
                 <h3>References</h3>
+                <table>
+                    <caption>References. More upon request.</caption>
+                    <tr>
+                        <th>Name</th>
+                        <th>Title</th>
+                        <th>Phone number</th>
+                        <th>Email</th>
+                    </tr>
+                    <tr>
+                        <td>Jane Smith</td>
+                        <td>Software Engineer</td>
+                        <td>(123) 456-7890</td>
+                        <td>whatever@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>Game Dev</td>
+                        <td>(123) 456-7890</td>
+                        <td>whatever2@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Jane Smith</td>
+                        <td>Software Engineer</td>
+                        <td>(123) 456-7890</td>
+                        <td>whatever@gmail.com</td>
+                    </tr>
+                </table>
             </section>
         </section>
     </main>
@@ -58,5 +86,13 @@
     <footer>
         <p>&copy; 2023 John Doe</p>
     </footer>
+
+     <script>
+        const today = new Date(); 
+        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        const formattedDate = today.toLocaleDateString('en-US', options); 
+        document.getElementById('currentDate').textContent = formattedDate;
+        console.log("Hello!! Today's date is: " + formattedDate + " and I attend WGU.");
+    </script>
 </body>
 </html>
