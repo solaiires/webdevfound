@@ -1,72 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Career Goals</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="favicon.png">
+  </head>
+  <body>
     <header>
-        <nav id = "nav">
-            <a href="resume.html" class = "title">WGU 367 Portfolio</a>
-            <ul id = "ulnav">
-                <li><a href="career-goals.html">Career Goals</a></li>
-                <li><a href="cover-letter.html">Cover Letter</a></li>
-                <li><a href="resume.html">Resume</a></li>
-            </ul>
-        </nav>
+      <nav id="nav">
+        <a href="resume.html" class="title">WGU 367 Portfolio</a>
+        <ul id="ulnav">
+          <li><a href="career-goals.html">Career Goals</a></li>
+          <li><a href="cover-letter.html">Cover Letter</a></li>
+          <li><a href="resume.html">Resume</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
-        <section>
-            <img src="image3.jpeg" alt="Career Goals Image" width="300" height="200">
-            <p>What I'm listening to:</p>
-            <audio controls src="barbie_beauty_boutique_soundtrack_-_track_4.mp3"></audio>
-        </section>
-        <article>
-            <video width="320" height="240" controls>
-                <source src="videoreq.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </article>
-        <section>
-            <form action="https://wp.zybooks.com/form-viewer.php" method="post">
-                <label for="firstname">First name:</label>
-                <input type="text" id="fname" name="firstname" required>
-                <br>
-                <label for="lastname">Last name:</label>
-                <input type="lastname" id="lname" name="lname" required>
-                <br>
-                <label for="companyname">Company Name:</label>
-                <input type="companyname" id="cname" name="companyname">
-                <br>
-                <label for="phonenumber">Phone number:</label>
-                <input type="phonenumber" id="pnumber" name="pnumber">
-                <br>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-                <br>
-                <label for="contacttime">Best time to contact:</label>
-                <input type="radio" id = "a.m." name="contacttime" value="a.m.">
-                <label for="a.m.">a.m.</label>
-                <input type="radio" id = "p.m." name="contacttime" value="p.m.">
-                <label for="p.m.">p.m.</label>
-                <input type="radio" id = "anytime" name="contacttime" value="anytime">
-                <label for="anytime">anytime</label>
-                <br>
-                <label for="wayof">Preferred contact method:</label>
-                <select name="contactway" id="wayof">
-                <option value="email">E-mail</option>
-                <option value="phone">Phone</option>
-                <option value="text">Text</option>
-                </select>
-                <br>
-                <input type="submit" value="Submit">
-            </form>
-        </section>
+        <section class ="career-text">
+        <h2>Career Goals</h2>
+        <p>
+          My career goals include becoming a proficient software developer,
+          contributing to innovative projects, and continuously improving my
+          skills in the tech industry.
+        </p>
+      </section>
+      <section class="career-text">
+        <img
+          src="panorama-shot-canal-lake-pukaki-twisel-surrounded-with-mountains_181624-45343.avif"
+          alt="panorama shot of canal lake Pukaki by FreePik"
+          class = "careerimage">
+        <audio
+          controls
+          src="barbie_beauty_boutique_soundtrack_-_track_4.mp3">
+        </audio>
+      </section>
+      <article>
+        <video width="320" height="240" controls>
+          <source src="tumblr_spyqyzKQ951a1zhk7.mp4" type="video/mp4" />
+        </video>
+      </article>
+      <section>
+        <form
+          action="https://wp.zybooks.com/form-viewer.php"
+          method="post"
+          class="styled-form">
+          <label for="fname">First name:</label>
+          <input type="text" id="fname" name="firstname" required>
+
+          <label for="lname">Last name:</label>
+          <input type="text" id="lname" name="lastname" required>
+
+          <label for="cname">Company Name:</label>
+          <input type="text" id="cname" name="companyname">
+
+          <label for="pnumber">Phone number:</label>
+          <input type="text" id="pnumber" name="phonenumber">
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+        <p>Best time to contact:</p>
+            <label>
+                <input type="radio" name="contacttime" value="a.m." />
+              a.m.
+            </label>
+            <label>
+                <input type="radio" name="contacttime" value="p.m." />
+              p.m.
+            </label>
+            <label>
+                <input type="radio" name="contacttime" value="anytime" />
+              anytime
+            </label>
+
+          <label for="wayof">Preferred contact method:</label>
+          <select name="contactway" id="wayof">
+            <option value="email">E-mail</option>
+            <option value="phone">Phone</option>
+            <option value="text">Text</option>
+          </select>
+
+          <input type="submit" value="Submit" />
+        </form>
+      </section>
     </main>
-</body>
-    <footer>
-        <p>&copy; 2023 John Doe</p>
-    </footer>
+  </body>
+  <footer>
+    <p> &copy; 2023 John Doe </p>
+  </footer>
 </html>

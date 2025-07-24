@@ -1,148 +1,248 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Sora:wght@300;400;500&family=Special+Elite&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Grenze:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=IM+Fell+DW+Pica:ital@0;1&family=IM+Fell+English+SC&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Radley:ital@0;1&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sora:wght@300;400;500&family=Special+Elite&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Sora:wght@300;400;500&family=Special+Elite&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Grenze:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=IM+Fell+DW+Pica:ital@0;1&family=IM+Fell+English+SC&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Radley:ital@0;1&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sora:wght@300;400;500&family=Special+Elite&display=swap");
 
-
-html, body {
-    font-family: PT Sans, sans-serif;
-    background-color:rgb(0, 0, 0);
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+html,
+body {
+  font-family: PT Sans, sans-serif;
+  background-color: rgb(0, 0, 0);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 *.references {
-    color: rgb(201, 200, 196);
+  color: rgb(201, 200, 196);
 }
 
-h1, h2, h3, p, span, ul {
-    font-family: Roboto, serif;
-    font-style: normal;
-    color: rgb(201, 200, 196);
+h1,
+h2,
+h3,
+p,
+span,
+ul {
+  font-family: Roboto, serif;
+  font-style: normal;
+  color: rgb(201, 200, 196);
 }
 
 #date span {
-    color: rgb(255, 123, 0);
+  color: rgb(255, 123, 0);
 }
 
-h1, h2 {
-    text-transform: uppercase;
-    color:rgb(201, 200, 196);
+h1,
+h2 {
+  text-transform: uppercase;
+  color: rgb(201, 200, 196);
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
-p a:first-child {
-    color: rgb(155, 155, 155);
+p a:nth-child(2) {
+  color: rgb(155, 155, 155);
 }
 
-p a:first-child:hover {
-    color: rgb(255, 123, 0);
-    transition: color 0.3s ease;
+p a:nth-child(2):hover {
+  color: rgb(255, 123, 0);
+  transition: color 0.3s ease;
 }
 
 #ulnav {
-    color: white;
-    list-style: none;
-    font-size: 1.2em;
+  color: white;
+  list-style: none;
+  font-size: 1.2em;
 }
 
 #ulnav a:visited {
-    color: white;
+  color: white;
 }
 
 #ulnav a:hover {
-    color: rgb(255, 123, 0);
-    transition: color 0.3s ease;
-    text-decoration: none;
+  color: rgb(255, 123, 0);
+  transition: color 0.3s ease;
+  text-decoration: none;
 }
 
 #nav {
-    background-color: #000000;
-    color: #ffffff;
-    padding: 10px;
-    padding-top: 20px;
-    padding-bottom:20px;
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 nav ul {
-    overflow: hidden;
-    margin: 0;
+  overflow: hidden;
+  margin: 0;
 }
 
 nav ul li {
-    float: right;
-    padding: 10px;
-    font-weight:300;
+  float: right;
+  padding: 10px;
+  font-weight: 300;
 }
 
 .title {
-    color: rgb(201, 200, 196);
-    font-family: Roboto, serif;
-    font-size: 1.5em;
-    text-transform: uppercase;
-    font-weight: bold;
+  color: rgb(201, 200, 196);
+  font-family: Roboto, serif;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 #container {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
 #decoration {
-    flex: 1 1 300px;
-    max-width: 50%;
-    box-sizing: border-box;
-    padding: 0;
-    margin-right: 100px;
-    position: relative;
-    border-right: 6px double rgb(198, 198, 198);
+  flex: 1 1 300px;
+  max-width: 50%;
+  box-sizing: border-box;
+  padding: 0;
+  margin-right: 100px;
+  position: relative;
+  border-right: 6px double rgb(198, 198, 198);
 }
 
 #decoration img {
-    width: 100%;
-    height: auto;
-    display: block;
-    max-width: 100%;
+  width: 100%;
+  height: auto;
+  display: block;
+  max-width: 100%;
 }
 
 #contentbox {
-    flex: 1 1 300px;
-    max-width: 50%;
-    box-sizing: border-box;
-    padding: 10px;
+  flex: 1 1 300px;
+  max-width: 50%;
+  box-sizing: border-box;
+  padding: 10px;
 }
 
-th, td {
-  padding: 10px; /* Adds 10 pixels of padding on all sides */
+th,
+td {
+  padding: 10px;
 }
 
 #cover-letter-section {
-    width: 50%;
-    margin: 0 auto;
+  width: 50%;
+  margin: 0 auto;
 }
 
 #cover-letter-section mark {
+  text-align: center;
+  background-color: rgb(255, 123, 0);
+  color: rgb(0, 0, 0);
+}
+
+.styled-form {
+  max-width: 500px;
+  margin: 2em auto;
+  padding: 2em;
+  background-color: #afb0b2;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+}
+
+.styled-form label {
+  display: block;
+  margin-bottom: 0.25em;
+  font-weight: bold;
+}
+
+.styled-form input[type="text"],
+.styled-form input[type="text"],
+.styled-form textarea,
+.styled-form select {
+  width: 100%;
+  padding: 0.5em;
+  margin-bottom: 1em;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  font-size: 1em;
+  box-sizing: border-box;
+}
+
+.styled-form p {
+  color: black;
+  border: none;
+  padding: 0;
+  margin-bottom: 1em;
+  font-weight:bold;
+}
+
+
+.styled-form p label {
+  display: inline-block;
+  margin-right: 1em;
+  font-weight: normal;
+}
+
+.styled-form input[type="radio"] {
+  margin-right: 0.25em;
+}
+
+.styled-form input[type="submit"] {
+  background-color: rgb(201, 99, 3);
+  color: white;
+  border: none;
+  padding: 0.75em 1.5em;
+  font-size: 1em;
+  border-radius: 4px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.styled-form input[type="submit"]:hover {
+  background-color: #923803;
+}
+
+audio,
+video, .careerimage {
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.careerimage {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    padding-left: 0px;
+}
+
+.career-text {
+    margin: 0;
+    padding: 0;
+    max-width: 100vw;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    background-color: rgb(255, 123, 0);
-    color: rgb(0, 0, 0);
+    min-height: 40vh;
 }
 
 @media (max-width: 800px) {
-    #container {
-        flex-direction: column;
-    }
-    #decoration, #contentbox {
-        max-width: 100%;
-        margin-right: 0;
-    }
+  #container {
+    flex-direction: column;
+  }
+  #decoration,
+  #contentbox {
+    max-width: 100%;
+    margin-right: 0;
+  }
 }
