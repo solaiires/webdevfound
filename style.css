@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Sora:wght@300;400;500&family=Special+Elite&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Grenze:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=IM+Fell+DW+Pica:ital@0;1&family=IM+Fell+English+SC&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Radley:ital@0;1&family=Sora:wght@300;400;500&family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Grenze:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=IM+Fell+DW+Pica:ital@0;1&family=IM+Fell+English+SC&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Radley:ital@0;1&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sora:wght@300;400;500&family=Special+Elite&display=swap');
 
 
 html, body {
@@ -12,21 +11,35 @@ html, body {
 }
 
 *.references {
-    color: white;
+    color: rgb(201, 200, 196);
 }
 
 h1, h2, h3, p, span, ul {
-    font-family: Radley, serif;
+    font-family: Roboto, serif;
     font-style: normal;
-    color: #ebebeb;
+    color: rgb(201, 200, 196);
+}
+
+#date span {
+    color: rgb(255, 123, 0);
 }
 
 h1, h2 {
     text-transform: uppercase;
+    color:rgb(201, 200, 196);
 }
 
 a{
     text-decoration: none;
+}
+
+p a:first-child {
+    color: rgb(155, 155, 155);
+}
+
+p a:first-child:hover {
+    color: rgb(255, 123, 0);
+    transition: color 0.3s ease;
 }
 
 #ulnav {
@@ -53,7 +66,7 @@ a{
     padding-bottom:20px;
     display:flex;
     justify-content: space-between;
-    align-items: center;;
+    align-items: center;
 }
 
 nav ul {
@@ -62,14 +75,14 @@ nav ul {
 }
 
 nav ul li {
-    /* display: inline-block; */
     float: right;
     padding: 10px;
+    font-weight:300;
 }
 
 .title {
-    color: white;
-    font-family: Radley, serif;
+    color: rgb(201, 200, 196);
+    font-family: Roboto, serif;
     font-size: 1.5em;
     text-transform: uppercase;
     font-weight: bold;
@@ -92,6 +105,7 @@ nav ul li {
     padding: 0;
     margin-right: 100px;
     position: relative;
+    border-right: 6px double rgb(198, 198, 198);
 }
 
 #decoration img {
@@ -106,6 +120,21 @@ nav ul li {
     max-width: 50%;
     box-sizing: border-box;
     padding: 10px;
+}
+
+th, td {
+  padding: 10px; /* Adds 10 pixels of padding on all sides */
+}
+
+#cover-letter-section {
+    width: 50%;
+    margin: 0 auto;
+}
+
+#cover-letter-section mark {
+    text-align: center;
+    background-color: rgb(255, 123, 0);
+    color: rgb(0, 0, 0);
 }
 
 @media (max-width: 800px) {
