@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Sora:wght@300;400;500&family=Special+Elite&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Grenze:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=IM+Fell+DW+Pica:ital@0;1&family=IM+Fell+English+SC&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Radley:ital@0;1&family=Sora:wght@300;400;500&family=Special+Elite&display=swap');
+
+
+html, body {
+    font-family: PT Sans, sans-serif;
+    background-color:rgb(0, 0, 0);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*.references {
+    color: white;
+}
+
+h1, h2, h3, p, span, ul {
+    font-family: Radley, serif;
+    font-style: normal;
+    color: #ebebeb;
+}
+
+h1, h2 {
+    text-transform: uppercase;
+}
+
+a{
+    text-decoration: none;
+}
+
+#ulnav {
+    color: white;
+    list-style: none;
+    font-size: 1.2em;
+}
+
+#ulnav a:visited {
+    color: white;
+}
+
+#ulnav a:hover {
+    color: rgb(255, 123, 0);
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+#nav {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom:20px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;;
+}
+
+nav ul {
+    overflow: hidden;
+    margin: 0;
+}
+
+nav ul li {
+    /* display: inline-block; */
+    float: right;
+    padding: 10px;
+}
+
+.title {
+    color: white;
+    font-family: Radley, serif;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#decoration {
+    flex: 1 1 300px;
+    max-width: 50%;
+    box-sizing: border-box;
+    padding: 0;
+    margin-right: 100px;
+    position: relative;
+}
+
+#decoration img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: 100%;
+}
+
+#contentbox {
+    flex: 1 1 300px;
+    max-width: 50%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+@media (max-width: 800px) {
+    #container {
+        flex-direction: column;
+    }
+    #decoration, #contentbox {
+        max-width: 100%;
+        margin-right: 0;
+    }
+}
